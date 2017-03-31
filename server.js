@@ -3,12 +3,11 @@
 // BASE SETUP
 // =============================================================================
 
-// db connection
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://node:node@novus.modulusmongo.net:27017/Iganiq8o'); // connect to our database
-
 var Bear = require('./app/models/bear');
 
+// db connection
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://172.31.0.0/16'); // connect to our database
 
 // call the packages we need
 var express = require('express');        // call express
